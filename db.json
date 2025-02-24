@@ -1,0 +1,48 @@
+{
+  "hits": [
+    {
+      "id": "1",
+      "name": "company1"
+    },
+    {
+      "id": "2",
+      "name": "company2"
+    },
+    {
+      "id": "265e",
+      "name": "company4"
+    },
+    {
+      "id": "8eb1",
+      "name": "airbnb"
+    },
+    {
+      "id": "9b40",
+      "name": "payscale"
+    },
+    {
+      "id": "6a7d",
+      "name": "google"
+    },
+    {
+      "id": "79f6",
+      "name": "etsy"
+    },
+    {
+      "id": "3eb3",
+      "name": "FIFA"
+    },
+    {
+      "id": "9f9f",
+      "name": "AWS"
+    },
+    {
+      "id": "e077",
+      "name": "Environmental Studies Co."
+    },
+    {
+      "id": "da58",
+      "name": "company8"
+    }
+  ]
+}
