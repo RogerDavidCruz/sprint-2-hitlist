@@ -1,7 +1,16 @@
-# React + Vite
+# Company Hitlist Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This hitlist can add, delete, and filter amongst companies added.
+It uses JSON server as well
 
+## Commands
+To Run the React App
+`npm run dev`
+
+To Run the JSON server
+`json-server --watch db.json --port 3001`
+
+### Additional Information
 Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
