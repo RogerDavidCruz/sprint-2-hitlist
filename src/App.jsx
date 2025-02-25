@@ -8,6 +8,7 @@ function App() {
   const [companies, setCompanies] = useState([]);
   const [filter, setFilter] = useState('');
   const [error, setError] = useState(null);
+  const [sortOrder, setSortOrder] = useState('asc');
 
   useEffect(() => {
     companyService
@@ -56,6 +57,13 @@ function App() {
     company.name.toLowerCase().includes(filter.toLowerCase())
   );
 
+  // sorting considering numeric parts of string, case differences, and special characters
+  const sortedCompanies = [...filteredCompanies].sort((a, b) => {
+    return sortOrder === 'asc'
+      ? a.name.localeCompare(b.name, undefined, { numeric: true, sensitivity: 'base' })
+      : b.name.localeCompare(a.name, undefined, { numeric: true, sensitivity: 'base' });
+  });
+
   return (
     <div className="app-container">
       <h1>Hitlist of Companies</h1>
@@ -64,6 +72,11 @@ function App() {
       <FilterCompanies filter={filter} handleFilterChange={handleFilterChange} />
       <AddCompany addCompany={addCompany} />
 
+      <div className="sort-buttons" style={{ marginTop: '1rem' }}>
+        <button onClick={() => setSortOrder('asc')}>Sort A-Z</button>
+        <button onClick={() => setSortOrder('desc')}>Sort Z-A</button>
+      </div>
+
       <div className="columns-container">
         <div className="column">
           <div className="column-header">
@@ -71,7 +84,7 @@ function App() {
             <span> {filteredCompanies.length} Jobs</span>
           </div>
           <ul className="company-list">
-            {filteredCompanies.map(company => (
+            {sortedCompanies.map(company => (
               <li key={company.id} className="company-tile">
                 <span>{company.name}</span>
                 <button

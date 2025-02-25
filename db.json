@@ -43,6 +43,42 @@
     {
       "id": "da58",
       "name": "company8"
+    },
+    {
+      "id": "bbdd",
+      "name": "z-company"
+    },
+    {
+      "id": "fe30",
+      "name": "1company"
+    },
+    {
+      "id": "0444",
+      "name": "%special-char"
+    },
+    {
+      "id": "21f7",
+      "name": "34-company"
+    },
+    {
+      "id": "5809",
+      "name": "$another-char"
+    },
+    {
+      "id": "8365",
+      "name": "290company"
+    },
+    {
+      "id": "b4cb",
+      "name": "2company"
+    },
+    {
+      "id": "d40d",
+      "name": "zz-company"
+    },
+    {
+      "id": "c242",
+      "name": "google2"
     }
   ]
 }
