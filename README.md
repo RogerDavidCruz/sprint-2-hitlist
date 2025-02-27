@@ -1,7 +1,7 @@
 # Company Hitlist Project
 
 This hitlist can add, delete, and filter amongst companies added.
-It uses JSON server as well
+It uses JSON server for the static company data.
 
 ## Commands
 To Run the React App
